@@ -41,7 +41,7 @@ a.head {
      font-size: 1.5em;
 }
 
-a:hover {
+a.head:hover {
      background-color: #403851;
      transform: scale(1.04) perspective(1px)
 }
@@ -144,7 +144,7 @@ img {
     font-family: 'Abril Fatface', serif;
 }
 .banner2 {
-    background-image: url("/Users/kokosiknn/Desktop/My website/images/hrebet-Krykty-tau.jpg");
+    background-image: url("../images/hrebet-Krykty-tau.jpg");
     height: 600px;
     background-attachment: fixed;
     background-position: center;
@@ -218,7 +218,7 @@ a[href^="mailto:"] {
     text-align: center;
     border-radius: 5px;
 
-    background-image: url("images/email.png");
+    background-image: url("../images/email.png");
     background-size: 100%;
     width: 150px;
     height: 150px;
@@ -241,20 +241,20 @@ a[href^="mailto:"] {
 
 }
 a.icon-github {
-    background-image: url("images/github.png");
+    background-image: url("../images/github.png");
     background-size: 100%;
     width: 100px;
     height: 100px;
     margin-left: 100px;
 }
 a.icon-insta {
-    background-image: url("images/instagram.png");
+    background-image: url("../images/instagram.png");
     background-size: 100%;
     width: 100px;
     height: 100px;
 }
 a.icon-tg {
-    background-image: url("images/telegram.png");
+    background-image: url("../images/telegram.png");
     background-size: 100%;
     width: 100px;
     height: 100px;
@@ -295,8 +295,4 @@ a:hover {
 .blog:hover {
   background-color: #f98e80;
   transform: scale(1.02) perspective(1px)
-}
-
-#end {
-    background-color: black;
 }
