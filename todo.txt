@@ -1,0 +1,20 @@
+Based on what we learned during the lab, you should continue building on your personal website, by adding some content and links to it. Treat this exercise as creating your personal portfolio that you would show to recruiters.
+
+In your HTML file, you should have all the following:
+
+-headings
+-text about yourself (e.g., bio)
+-lists (e.g., projects) as well as a section containing icon links similar to this (at least three icons with links).
+-For the social media links, you should use the exact following IDs (for the tags): gh-link (for GitHub), tg-link (for Telegram), and email. Clicking on the email icon should launch the default mail client.
+
+Grading Criteria:
+    -Content (60%)
+        Does your website contain the required/necessary sections?
+        Proper usage of semantic HTML (Use W3 Validator)
+        Is the added content relevant and appropriate for your personal portfolio website?
+        Inclusion of the specified social links (email, GitHub, Telegram, etc.) as icon links?
+        Aesthetic Appeal (30%)
+        Is CSS used effectively?
+        Is the website visually appealing and well-designed?
+    -Automatic Deployment (10%):
+        Activate GitHub Pages (from the master branch) for this repository and add the link to your deployed website under the repository settings
