@@ -1,3 +1,4 @@
+HW1:
 Based on what we learned during the lab, you should continue building on your personal website, by adding some content and links to it. Treat this exercise as creating your personal portfolio that you would show to recruiters.
 
 In your HTML file, you should have all the following:
@@ -18,3 +19,14 @@ Grading Criteria:
         Is the website visually appealing and well-designed?
     -Automatic Deployment (10%):
         Activate GitHub Pages (from the master branch) for this repository and add the link to your deployed website under the repository settings
+
+HW2:
+Building on the previous homework submission, add a script that fetches an XKCD comic identifier from https://fwd.innopolis.university/api/hw2 by sending your email as a query parameter (called email). It is recommended to use URLSearchParams. Example: https://fwd.innopolis.university/api/hw2?email=i.ivanov@innopolis.university
+
+After getting the ID, use it to request https://fwd.innopolis.university/api/comic?id=<your-id> using the JavaScript Fetch API. You should then display the image, its title, and the date it was published (using date.toLocaleDateString()). Don't forget about the image's alternative text as well.
+
+Use flexbox and/or grid to style the layout of your webpage.
+
+Consider this API to be untrusted (might attempt XSS attacks).
+
+Include the GitHub repository link and a zipped version of the repository in the submission.
