@@ -51,7 +51,7 @@ The submission format is the same as previous assignments: link to GitHub, link 
 
 The submission of this assignment has been merged with Homework 5.
 
-HW%:
+HW5:
 Take your website from the previous assignment (the one with Svelte components) and adapt it to use SvelteKit. This means you should no longer use individual HTML files (if you had multiple pages) and would instead use Svelte components in the "routes" directory, along with other features such as "+layout.svelte" and so on (as covered in the lab).
 
 As a minimum, you should have at least 2 routes with navigation links between them and a "+layout.svelte" with header (containing the links) and footer.
