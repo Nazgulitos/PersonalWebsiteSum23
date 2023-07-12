@@ -4,7 +4,7 @@
 
 	const email = 'n.salikhova@innopolis.university';
 
-	let img = './src/assets/images/loading-splash.gif';
+	let img: string;
 	let alt: string;
 	let safe_title: string;
 	let date: string;
