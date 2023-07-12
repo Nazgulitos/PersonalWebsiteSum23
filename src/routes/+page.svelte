@@ -42,14 +42,14 @@
 		<a
 			href={'mailto:n.salikhova@innopolis.university?body=Hi! I want to take over the world with you!&subject=VIP offer'}
 			class="textMeImg"
-		>
-			<img
-				id="mainImg"
-				src={'https://cdn.dribbble.com/users/2789762/screenshots/8630894/media/583b209224b027954cb6e8b9901cb731.gif'}
-				alt={'cat'}
-				class="catImg"
-			/>
-		</a>
+			aria-label="Email"
+		/>
+		<img
+			id="mainImg"
+			src={'https://cdn.dribbble.com/users/2789762/screenshots/8630894/media/583b209224b027954cb6e8b9901cb731.gif'}
+			alt={'cat'}
+			class="catImg"
+		/>
 	</div>
 
 	<Contacts />
