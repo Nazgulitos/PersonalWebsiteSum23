@@ -1,12 +1,12 @@
 <script lang="ts">
 	import Projects from './Projects.svelte';
 	import Contacts from './Contacts.svelte';
-	import imagePersPhoto from '$assets/images/AvaPro.png';
+	// import imagePersPhoto from '$assets/images/AvaPro.png';
 </script>
 
 <main>
 	<div id="banner">
-		<img id="mainImg" alt={'Photo of me'} src={imagePersPhoto} />
+		<!-- <img id="mainImg" alt={'Photo of me'} src={imagePersPhoto} /> -->
 		<div id="wrapper">
 			<h1 id="banner-title">Hi! I'm Nazgul. <br /> Welcome to my portfolio!</h1>
 		</div>

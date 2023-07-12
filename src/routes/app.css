@@ -141,7 +141,7 @@ a.head:hover {
 	font-family: 'Abril Fatface', serif;
 }
 .banner2 {
-	background-image: url('$assets/images/hrebet-Krykty-tau.jpg');
+	/* background-image: url('$assets/images/hrebet-Krykty-tau.jpg'); */
 	height: 600px;
 	background-attachment: fixed;
 	background-position: center;
@@ -214,7 +214,7 @@ a[href^='mailto:'] {
 	text-align: center;
 	border-radius: 5px;
 
-	background-image: url('$assets/images/email.png');
+	/* background-image: url('$assets/images/email.png'); */
 	background-size: 100%;
 	width: 150px;
 	height: 150px;
@@ -235,20 +235,20 @@ a[href^='mailto:'] {
 	align-items: center;
 }
 a.icon-github {
-	background-image: url('$/assets/images/github.png');
+	/* background-image: url('$/assets/images/github.png'); */
 	background-size: 100%;
 	width: 100px;
 	height: 100px;
 	margin-left: 100px;
 }
 a.icon-insta {
-	background-image: url('$/assets/images/instagram.png');
+	/* background-image: url('$/assets/images/instagram.png'); */
 	background-size: 100%;
 	width: 100px;
 	height: 100px;
 }
 a.icon-tg {
-	background-image: url('$/assets/images/telegram.png');
+	/* background-image: url('$/assets/images/telegram.png'); */
 	background-size: 100%;
 	width: 100px;
 	height: 100px;
