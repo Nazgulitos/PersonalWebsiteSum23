@@ -1,0 +1,63 @@
+HW1:
+Based on what we learned during the lab, you should continue building on your personal website, by adding some content and links to it. Treat this exercise as creating your personal portfolio that you would show to recruiters.
+
+In your HTML file, you should have all the following:
+
+-headings
+-text about yourself (e.g., bio)
+-lists (e.g., projects) as well as a section containing icon links similar to this (at least three icons with links).
+-For the social media links, you should use the exact following IDs (for the tags): gh-link (for GitHub), tg-link (for Telegram), and email. Clicking on the email icon should launch the default mail client.
+
+Grading Criteria:
+    -Content (60%)
+        Does your website contain the required/necessary sections?
+        Proper usage of semantic HTML (Use W3 Validator)
+        Is the added content relevant and appropriate for your personal portfolio website?
+        Inclusion of the specified social links (email, GitHub, Telegram, etc.) as icon links?
+        Aesthetic Appeal (30%)
+        Is CSS used effectively?
+        Is the website visually appealing and well-designed?
+    -Automatic Deployment (10%):
+        Activate GitHub Pages (from the master branch) for this repository and add the link to your deployed website under the repository settings
+
+HW2:
+Building on the previous homework submission, add a script that fetches an XKCD comic identifier from https://fwd.innopolis.university/api/hw2 by sending your email as a query parameter (called email). It is recommended to use URLSearchParams. Example: https://fwd.innopolis.university/api/hw2?email=i.ivanov@innopolis.university
+
+After getting the ID, use it to request https://fwd.innopolis.university/api/comic?id=<your-id> using the JavaScript Fetch API. You should then display the image, its title, and the date it was published (using date.toLocaleDateString()). Don't forget about the image's alternative text as well.
+
+Use flexbox and/or grid to style the layout of your webpage.
+
+Consider this API to be untrusted (might attempt XSS attacks).
+
+Include the GitHub repository link and a zipped version of the repository in the submission.
+
+HW3:
+For this assignment, you will need to continue working on your personal website from previous homeworks. First, you need to define TypeScript types (interfaces) for the API used in the previous assignment and convert all the code to use TypeScript (with the interfaces you defined) instead of JavaScript.
+
+Next, you need to use a bundler to bundle the TypeScript code. As a minimum requirement, it should compile the TypeScript code, minify the output, and be able to import npm packages. To demonstrate this ability to import npm packages, choose one library of momentjs, date-fns, and dayjs (use bundlephobia to pick out the tree-shakable one) and use its "fromNow" function to display how long ago the comic was released.
+
+You should define a "build" script in your package.json file that runs this bundling process. Additionally, you need to ensure that there are no .js files in the source code. For the purpose of this assignment only, you can push the dist folder to git (for GitHub Pages to work).
+
+When writing TypeScript code, you should not use the 'any' type either explicitly or implicitly (beware of response.json()). Furthermore, you must use strict mode throughout the TypeScript code. Finally, when submitting your work, do not include node_modules in the zip or GitHub. Adding node_modules to git will result in an automatic 0.
+
+Include the GitHub repository link and a zipped version of the repository in the submission. Note that you must submit a link to the tag with the latest commit for this homework.
+
+HW4:
+Just like we did in the lab, take your previous assignment submission and rewrite it as a Svelte application with TypeScript. Use Svelte components instead of keeping everything in "app.html". The components themselves (number of components, props, events, content) will depend on the nature of your website, but it is expected that a minimum of 3 components will be used. For example, you could have one component for the comic (with the appropriate props), another for the short bio, and another one for a list of projects. If you use headers/footers, they are also good candidates for components.
+
+Use Svelte best practices as shown in the lecture and lab (don't use "document.getElementById", use props and events effectively, ...)
+
+The submission format is the same as previous assignments: link to GitHub, link to deployed site, and zip file with source code.
+
+The submission of this assignment has been merged with Homework 5.
+
+HW%:
+Take your website from the previous assignment (the one with Svelte components) and adapt it to use SvelteKit. This means you should no longer use individual HTML files (if you had multiple pages) and would instead use Svelte components in the "routes" directory, along with other features such as "+layout.svelte" and so on (as covered in the lab).
+
+As a minimum, you should have at least 2 routes with navigation links between them and a "+layout.svelte" with header (containing the links) and footer.
+
+Use GitHub Actions to build and deploy your site to GitHub Pages when you push to the main branch. It is preferable to use the User site for this (have the repo name be "username.github.io"); otherwise, make sure to set up the base paths correctly.
+
+Your git repo should not contain any generated files (such as build, node_modules, .svelte-kit, …).
+
+Submit links to both the source code (repo) and the deployed GitHub Pages site.
