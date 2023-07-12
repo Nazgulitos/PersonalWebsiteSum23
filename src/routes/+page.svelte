@@ -61,5 +61,5 @@
 </svelte:head>
 
 <style>
-	@import './app.css';
+	@import './src/routes/app.css';
 </style>
