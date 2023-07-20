@@ -1,5 +1,4 @@
 <svelte:head>
-	<title>Jokes_API</title>
 	<link rel="icon" href="favicon.ico" />
 	<meta name="author" content="Nazgul Salikhova" />
 </svelte:head>
