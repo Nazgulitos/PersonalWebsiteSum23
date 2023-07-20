@@ -37,6 +37,10 @@ body {
 	padding: 0 20px;
 	background-color: #fe9e92;
 	color: white;
+	cursor: pointer;
+}
+.generate:hover {
+	background-color: #f67462;
 }
 
 #safe_title,

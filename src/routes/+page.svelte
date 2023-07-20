@@ -4,6 +4,12 @@
 	import imagePersPhoto from '$lib/images/AvaPro.png';
 </script>
 
+<svelte:head>
+	<meta charset="utf-8" />
+	<title>Portfolio</title>
+	<meta name="description" content="This page is a portfolio of Nazgul Salikhova that provides list of her projects, contact and bil" />
+</svelte:head>
+
 <main>
 	<div id="banner">
 		<img src={imagePersPhoto} alt="Nazgul" id="mainImg" />
@@ -56,9 +62,7 @@
 	<Contacts />
 </main>
 
-<svelte:head>
-	<title>Portfolio</title>
-</svelte:head>
+
 
 <style>
 	@import './app.css';

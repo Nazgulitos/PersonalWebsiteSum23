@@ -1,5 +1,7 @@
 <svelte:head>
 	<title>Jokes_API</title>
+	<link rel="icon" href="favicon.ico" />
+	<meta name="author" content="Nazgul Salikhova" />
 </svelte:head>
 
 <nav>
@@ -26,7 +28,7 @@
 	}
 
 	nav {
-		position: relative;
+		position: fixed;
 		list-style-type: none;
 		width: 100%;
 		margin: 0;

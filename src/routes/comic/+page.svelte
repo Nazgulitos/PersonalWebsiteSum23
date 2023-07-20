@@ -1,54 +1,36 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { formatDistanceToNow } from 'date-fns';
+	import { generateJoke } from './comic.api';
 
-	const email = 'n.salikhova@innopolis.university';
+	export let img = '';
+	export let alt = '';
+	export let safe_title = '';
+	export let date = '';
 
-	let img: string;
-	let alt: string;
-	let safe_title: string;
-	let date: string;
-
-	function generateJoke() {
-		fetch(`https://fwd.innopolis.university/api/hw2?email=${email}`)
-			.then((response: Response) => response.json())
-			.then((data: string) => {
-				const id: string = data;
-
-				fetch(`https://fwd.innopolis.university/api/comic?id=${id}`)
-					.then((response: Response) => response.json())
-					.then((comicData: JokesApi) => {
-						img = comicData.img;
-						alt = comicData.alt;
-						safe_title = comicData.safe_title;
-						const { year, month, day } = comicData;
-						date = formatDistanceToNow(new Date(year, month, day));
-					})
-					.catch((error) => console.log(error));
-			})
-			.catch((error) => console.log(error));
-	}
-
-	onMount(() => {
-		generateJoke();
-	});
-
-	interface JokesApi {
-		img: string;
-		alt: string;
-		safe_title: string;
-		year: number;
-		month: number;
-		day: number;
+	async function fetchJoke() {
+		try {
+			const data = await generateJoke(fetch);
+			img = data.img;
+			alt = data.alt;
+			safe_title = data.safe_title;
+			date = data.date;
+		} catch (error) {
+			console.log(error);
+		}
 	}
 </script>
+
+<svelte:head>
+	<meta charset="utf-8" />
+	<title>Jokes_API</title>
+	<meta name="description" content="This page provides a comic using Joke API" />
+</svelte:head>
 
 <main>
 	<div class="container">
 		<p id="safe_title">{safe_title}</p>
 		<img id="image" {alt} src={img} />
 		<p id="date">{date}</p>
-		<button class="generate" on:click={generateJoke}>Generate</button>
+		<button class="generate" on:click={fetchJoke}>Generate</button>
 	</div>
 </main>
 

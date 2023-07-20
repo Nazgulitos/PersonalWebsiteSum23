@@ -32,6 +32,14 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'build/'
+      - name: Format
+        run: npm format
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Check
+        run: npm run check
 
   deploy:
     needs: build
