@@ -33,7 +33,7 @@ jobs:
         with:
           path: 'build/'
       - name: Format
-        run: npm format
+        run: npm run format
 
       - name: Lint
         run: npm run lint
